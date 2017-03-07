@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>test</title>
+	<style type="text/css">
+		body{
+			
+		}
+		.container{
+			height:500px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 10px;
+			border:1px solid #999;
+		}
+		.my-lg-4{			
+			height: 50px;
+			border:1px solid #999;
+			background:#eee;
+			margin:0 10px;
+			margin-top: 10px;			
+		}
+		@media (min-width: 768px){
+			.container{
+				width: 700px;
+			}
+		}
+		@media (min-width: 768px){
+			
+		}
+		@media(min-width: 1200px){
+			.container{
+				width: 1170px;
+			}
+			.my-lg-4{
+				width: 31.333%;
+				float: left;
+				
+			}
+		}
+		@media(min-width: 1920px){
+			.container{
+				width: 1875px;
+			}
+			.my-lg-4{
+				width: 32.16%;
+				float: left;
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="my-lg-4">my-md-4</div>
+
+		<div class="my-lg-4">my-md-4</div>
+
+		<div class="my-lg-4">my-md-4</div>
+	</div>
+</body>
+</html>
