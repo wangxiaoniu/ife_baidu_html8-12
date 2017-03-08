@@ -2,66 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-
-	
+	<meta name="viewport" content="widht=device-width,initial-scale=1">
 	<title>test</title>
-	<style type="text/css">
-		body{
-			
-		}
-		.container{
-			height:500px;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 0 10px;
-			border:1px solid #999;
-		}
-		.my-lg-4{			
-			height: 50px;
-			border:1px solid #999;
-			background:#eee;
-			margin:0 10px;
-			margin-top: 10px;			
-		}
-		@media (min-width: 768px){
-			.container{
-				width: 700px;
-			}
-		}
-		@media (min-width: 768px){
-			
-		}
-		@media(min-width: 1200px){
-			.container{
-				width: 1170px;
-			}
-			.my-lg-4{
-				width: 31.333%;
-				float: left;
-				
-			}
-		}
-		@media(min-width: 1920px){
-			.container{
-				width: 1875px;
-			}
-			.my-lg-4{
-				width: 32.16%;
-				float: left;
-				
-			}
-
-		}
-	</style>
+	<link rel="stylesheet" href="layout.css">
 </head>
 <body>
-	<div class="container">
-
-		<div class="my-lg-4">my-lg-4</div>
-
-		<div class="my-lg-4">my-lg-4</div>
-
-		<div class="my-lg-4">my-lg-4</div>
+	<div class="container clearfix">
+		<div class="row">
+			<div class="my-lg-4">my-lg-4</div>
+			<div class="my-lg-4">my-lg-4</div>
+			<div class="my-lg-4">my-lg-4</div>
+		</div>
+		<div class="row">
+			<div class="my-lg-3">my-lg-3</div>
+			<div class="my-lg-6">my-lg-6</div>
+			<div class="my-lg-3">my-lg-3</div>
+		</div>
 	</div>
 </body>
 </html>

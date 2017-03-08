@@ -1,0 +1,76 @@
+		body{
+			
+		}
+		.clearfix{
+			overflow: auto;
+			_zomm:1;
+
+		}
+		.clearfix:after{
+			content: "";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.container{
+
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 10px;
+			border:1px solid #999;
+		}
+		.row{
+			margin-left: 10px;
+			margin-right: 10px;
+			clear: both;
+		}
+		.my-lg-4,.my-lg-3,.my-lg-6,.my-lg-1,.my-lg-2,.my-lg-8,.my-lg-12{
+			height: 50px;
+			border:1px solid #999;
+			background:#eee;
+		}
+		.my-lg-4,.my-md-4,.my-lg-3,.my-lg-6,.my-lg-8,.my-lg-12{			
+			margin:0 10px;
+			margin-top: 20px;			
+		}
+		
+		@media (min-width: 768px){
+			.container{
+				width: 700px;
+			}
+		}
+		@media(min-width: 1200px){
+			.container{
+				width: 1170px;
+			}
+			.my-lg-4,.my-md-4{
+				width: 31.333%;
+				float: left;
+			}
+			.my-lg-3{
+				width: 25%;
+				float: left;
+			}
+			.my-lg-6{
+				width: 43.96%;
+				float: left;
+			}
+		}
+		@media(min-width: 1920px){
+			.container{
+				width: 1875px;
+			}
+			.my-lg-4,.my-md-4{
+				width: 32.16%;
+				float: left;		
+			}
+			.my-lg-3{
+				width: 25%;
+				float: left;
+			}
+			.my-lg-6{
+				width: 46.46%;
+				float: left;
+			}
+		}
