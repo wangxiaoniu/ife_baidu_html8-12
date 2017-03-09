@@ -1,0 +1,59 @@
+/*
+author:wang rao
+2-17-03-09
+task9 ifebaidu
+*/
+*{
+	padding:0;
+	margin:0;
+	height: 100%;
+
+}
+
+header{
+	background:#2189BF;
+	height: 57px;
+	width: 100%;
+}
+header h1{
+	width: 36px;
+	height: 46px;
+	background: url(images/logo.png) no-repeat center bottom;
+	margin-left: 50px;
+	text-indent: -9999px;
+	float: left;
+}
+ header form{
+	width: 380px;
+	height: 28px;
+	float: right;
+	margin-top: 12px;
+	margin-right: 91px;
+	border-radius:20%;
+} 
+header form input.searchtext{
+	width: 294px;
+	height: 28px;
+	border:0;
+	border-radius: 14px;
+	padding-left: 19px;
+	
+}
+ header form a{
+ 	display: block;
+ 	width: 45px;
+ 	height: 28px;
+ 	color:#fff;
+ 	line-height: 28px;
+ 	float: right;
+ }
+aside{
+	width: 261px;
+	height: 100%;
+	background:#2B2E3D;
+	float: left;
+}
+article{
+	background: #EDEDEC;
+	padding-left: 262px;
+}
