@@ -114,16 +114,10 @@ ul.menu a{
 	display: inline-block;
 	color: #6D8095;
 	font-size: 12px;
-<<<<<<< HEAD
-	height: 13px;
-	line-height: 13px;
-}
-=======
 	vertical-align: top;
 }
 
 
->>>>>>> tem
 /*一级菜单*/
 ul.menu li{
 	height: 34px;
@@ -134,20 +128,10 @@ ul.menu li.active{
 	color: #fff;
 	height: 191px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> tem
 ul.menu li a{	
 	padding-left: 46px;
 }
 
-<<<<<<< HEAD
-ul.menu li a:hover,ul.menu li.active .child a:hover,ul.menu li.active ul.child ul.thirst li a:hover{
-	color:#fff;
-}
-=======
->>>>>>> tem
 ul.menu li a:before{
 	content: "";
 	display: inline-block;
@@ -155,10 +139,7 @@ ul.menu li a:before{
 	height: 12px;
 	margin-right: 10px;
 	background: url(images/menu_icon.png) no-repeat;
-<<<<<<< HEAD
-=======
 	vertical-align: top;
->>>>>>> tem
 }
 
 ul.menu li a.file:before{
@@ -173,20 +154,6 @@ ul.menu li a.share:before{
 ul.menu li a.tick:before{
 	background-position: 0 -38px;
 }
-<<<<<<< HEAD
-ul.menu li.active a,ul.menu li.active .child li.on a{
-	color: #fff;
-	vertical-align:top;
-}
-/*二级菜单*/
-ul.menu li.active .child a,ul.menu li.active ul.child ul.thirst li a{
-	color: #6D8095;
-}
-ul.menu li .child li a:before{
-	margin-right: 4px;
-}
-ul.menu li.active ul.child li{
-=======
 /*侧栏公共部分*/
 
 ul.menu li.active a,ul.menu ul.child li.on a,ul.menu ul.child ul.thirst li.now a{
@@ -204,7 +171,6 @@ ul.menu ul.child li a:before{
 	margin-right: 4px;
 }
 ul.menu ul.child li{
->>>>>>> tem
 	height: 21px;
 	padding: 0;
 	padding-left: 42px;
@@ -212,20 +178,6 @@ ul.menu ul.child li{
 	vertical-align: top;
 	background:transparent url(images/icon_li1.png) no-repeat 68px 10px;
 }
-<<<<<<< HEAD
-ul.menu li.active .child li.on{
-	height: 75px;
-	background:transparent url(images/icon_li2.png) no-repeat 68px 10px;
-}
-ul.menu li.active .child li a:before{
-	background-position: -45px 1px;
-}
-ul.menu li.active .child li.on a:before{
-	background-position: -45px -13px;
-}
-/*三级菜单*/
-ul.menu li.active ul.child ul.thirst{
-=======
 ul.menu .child li.on{
 	height: 75px;
 	background:transparent url(images/icon_li2.png) no-repeat 68px 10px;
@@ -238,32 +190,16 @@ ul.menu .child li.on a:before{
 }
 /*三级菜单*/
 ul.menu ul.child ul.thirst{
->>>>>>> tem
 	height: 60px;
 	padding:0;
 	margin:0;
 }
-<<<<<<< HEAD
-ul.menu li.active ul.child ul.thirst li{
-	height: 15px;
-
-	height: 20px;
-=======
 ul.menu ul.child ul.thirst li{
 	height: 15px;
->>>>>>> tem
 	padding:0;
 	margin:0;
 	padding-top: 10px;
 	background: none;
-<<<<<<< HEAD
-	
-}
-ul.menu li.active ul.child ul.thirst li a:before{
-
-	background-position: -31px -46px;
-}
-=======
 }
 ul.menu ul.child ul.thirst li a{
 	padding-left: 62px;
@@ -275,9 +211,26 @@ ul.menu ul.child ul.thirst li.now a:before{
 	background-position: -46px -45px;
 }
 /*右侧内容区*/
->>>>>>> tem
 article{
 	background: #EDEDEC;
 	margin-left: 262px;
 	height: auto;
+}
+/*面包屑导航*/
+article ul.nav{
+	width: 100%;
+	background: #fff;
+	height: 31px;
+}
+article ul.nav li{
+	display: inline-block;
+}
+article ul.nav li a{
+	font-size: 12px;
+	color:#AAAAA9;
+}
+article .content{
+
+	margin:27px 58px 0 58px;
+	background: #fff;
 }
