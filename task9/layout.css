@@ -221,9 +221,11 @@ article ul.nav{
 	width: 100%;
 	background: #fff;
 	height: 31px;
+	padding-left: 28px;
 }
 article ul.nav li{
 	display: inline-block;
+	line-height: 31px;
 }
 article ul.nav li a{
 	font-size: 12px;
