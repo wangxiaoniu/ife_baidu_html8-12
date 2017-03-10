@@ -23,101 +23,112 @@
 			margin-left: 10px;
 			margin-right: 10px;		
 		}
-		.my-lg-4,.my-lg-3,.my-lg-6,.my-lg-1,.my-lg-2,.my-lg-8,.my-lg-12,.my-xs-3,.my-xs-6,.my-xs-12,.my-md-1,.my-md-2,.my-md-6{
+		.my-lg-4,.my-md-3,.my-lg-6,.my-lg-1,.my-lg-2,.my-md-2,.my-md-8,.my-lg-12,.my-xs-3,.my-xs-6,.my-xs-12,.my-md-6,.my-md-12{
 			height: 50px;
 			border:1px solid #999;
 			background:#eee;
 			margin:0 10px;
 			margin-top: 20px;
 			padding:0 8px;
+
+		}
+		/*所有尺寸公共部分*/
+		@media (min-width: 520px){
+			.my-lg-4,.my-md-3,.my-lg-6,.my-lg-1,.my-lg-2,.my-md-2,.my-md-8,.my-lg-12,.my-xs-3,.my-xs-6,.my-xs-12,.my-md-6,.my-md-12{
+				float: left;
+			}
 		}
 		/*520px到760px宽度之间*/
-		 @media (min-width: 520px)and (max-width: 760px){
+		 @media (min-width: 520px)and (max-width: 768px){
 		 	.container{
 		 		width: 500px;
 		 	}
+			.my-md-2{
+				width: 14%;
+			}
+			.my-md-3{
+				width: 24%;
+			}
+			.my-md-8{
+				width: 48.19%;
+			}
 			.my-xs-3{
-				float: left;
 				width: 19%;
 			}
 			.my-xs-6{
-				float: left;
 				width: 37.8%;
 			}
+			.my-md-6{
+				width: 41.89%;
+			}
+			.my-md-12{
+				width: 91.8%;
+			}
 		} 
-		/*大于等于768px*/
-		@media (min-width: 768px){
+		/*大于768px*/
+		@media (min-width:778px){
 			.container{
 				width: 700px;
 			}
-			.my-md-1{
-				width: 6.5%;
-				float: left;
+			.my-lg-1{
+				width: 5%;
 			}
-			.my-md-2{
-				width: 10%;
-				float: left;
+			.my-lg-2{
+				width: 12%;
 			}
-			.my-xs-6,.my-md-6{
+			.my-lg-6{
+				width: 37.8%;
+			}		
+			.my-xs-6{
 				width: 38.96%;
-				float:left;
+			}
+			.my-lg-4{
+				width: 27.7%;
 			}
 			.my-xs-3{
 				width: 22%;
-				float: left;
 			}
-
 		}
 		/*大于等于1200px*/
 		@media(min-width: 1200px){
 			.container{
 				width: 1170px;
 			}
-			.my-md-1{
+			.my-lg-1{
 				width: 6%;
-				float: left;
 			}
-			.my-md-2{
+			.my-lg-2{
 				width: 15.7%;
-				float: left;
 			}
-			.my-lg-4,.my-md-4{
+			.my-lg-4{
 				width: 29.999%;
-				float: left;
 			}
 			.my-lg-3,.my-xs-3{
 				width: 25%;
-				float: left;
 			}
-			.my-lg-6,.my-xs-6,.my-md-6{
+			.my-lg-6,.my-xs-6{
 				width: 39.96%;
-				float: left;
-			}
-			
+			}			
 		}
 		/*大于等于1920px*/
 		@media(min-width: 1920px){
 			.container{
 				width: 1875px;
 			}
-			.my-md-1{
-				width: 9%;
-				float: left;
+			.my-lg-1{
+				width: 8%;
 			}
-			.my-md-2{
-				width: 15.899%;
-				float: left;
+			.my-lg-2{
+				width: 14.899%;
 			}
-			.my-lg-4,.my-md-4{
-				width: 31.28%;
-				float: left;		
+			.my-lg-4{
+				width: 31.28%;		
 			}
 			.my-lg-3{
 				width: 25%;
-				float: left;
 			}
 			.my-lg-6,.my-xs-6{
 				width: 43.85%;
-				float: left;
 			}
+			
 		}
