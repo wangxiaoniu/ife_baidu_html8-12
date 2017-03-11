@@ -14,6 +14,18 @@ a{
 ul{
 	list-style-type: none;
 }
+.clearfix{
+	overflow: auto;
+	_zoom:1;
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	
+}
 /*头部*/
 header{
 	background:#2189BF;
@@ -217,22 +229,150 @@ article{
 	height: auto;
 }
 /*面包屑导航*/
-article ul.nav{
-	width: 100%;
-	background: #fff;
-	height: 31px;
+article .nav{
 	padding-left: 28px;
+	background: #fff;
 }
-article ul.nav li{
+article .nav ul{
+	width: 100%;
+	height: 31px;
+}
+article .nav ul li{
 	display: inline-block;
 	line-height: 31px;
 }
-article ul.nav li a{
+article .nav ul li a{
 	font-size: 12px;
 	color:#AAAAA9;
 }
-article .content{
+article .nav ul li a:hover{
+	color:#6898C1;
+}
 
-	margin:27px 58px 0 58px;
+article .content{
+	width: 891px;
+	margin:0 auto;
+	margin-top: 21px;
+}
+/*搜索*/
+.search_con{
+	height: 86px;
+	background: #fff;
+	border:1px solid #AAAAA9;
+}
+/*历史查询*/
+.history_sear{
+	height: 65px;
+	background: #fff;
+	margin-top: 10px;
+}
+/*统计*/
+.count{
+	height: 91px;
+	margin-top: 18px;
+}
+.count h3{
+	font-size:12px;
+	font-family: "Microsoft Yahei";
+	color: #323232;
+	font-weight: normal;
+}
+/*.count_info{
+	height: 65px;
+
+}*/
+.count dl{
+	height:49px;
+	width: 171px;
+	background: #fff;
+	float: left;
+	margin:0 14px;
+	margin-top: 4px;
+	padding:10px 12px;
+	box-shadow: 0px 0px 2px #AAAAA9;
+}
+.count dl dt{
+	width: 61px;
+	height: 47px;
+	float: right
+}
+.count dl dd{
+	font-size: 12px;
+	font-family: "Microsoft Yahei";
+	color:#323232;
+	
+}
+.count dl dt + dd{
+	margin-top: 8px;
+}
+.count dl dd small{
+	font-size: 10px;
+	color:#AAAAA9;
+	display: block;
+	margin-top:3px;
+}
+dl.green{
+	border-left: 4px solid #44B29E;
+	margin-left: 0;
+}
+dl.green dt{
+	background: #44B29E;
+}
+dl.blue{
+	border-left: 4px solid #388AC1;
+}
+dl.blue dt{
+	background: #388AC1;
+}
+dl.red{
+	border-left: 4px solid #D04A36;
+}
+dl.red dt{
+	background: #D04A36;
+}
+dl.yellow{
+	border-left: 4px solid #E2CD47;
+	margin-right: 0;
+}
+dl.yellow dt{
+	background: #E2CD47;
+}
+/*项目*/
+.item{	
+	
+	
+	margin-top: 15px;
+}
+.item_l{
+	width: 531px;
+	height: 357px;
+	background: #fff;
+	float: left;
+}
+.item_r{
+
+	height: 357px;
+	width: 351px;
+	background: #fff;
+	float: right;
+}
+/*最后一项*/
+.item_last{
+	margin-top: 10px;
+	height: 357px;
+	
+}
+/*日期*/
+.date{
+	width: 351px;
+	height: 357px;
+	float: left;
+	background: #fff;
+}
+/*汽车排行榜*/
+.top{
+	width: 531px;
+	height: 357px;
+	float: right;
 	background: #fff;
 }
