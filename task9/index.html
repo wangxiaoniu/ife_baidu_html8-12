@@ -70,7 +70,50 @@
 				<div class="content">
 					<!-- 搜索 -->
 					<div class="search_con">
-						search_con
+						<form action="###">
+							<div class="form1">
+								<label for="select_item">查询项</label>
+								<select name="select_item" id="select_item">
+									<option value="第一项">第一项</option>
+								</select>	
+							</div>
+							<div class="form2">
+								<p>
+									<label for="buy">买方</label>
+									<select name="buy" id="buy">
+										<option value="小A">小A</option>
+									</select>
+
+									<label for="sell">卖方</label>
+									<select name="sell" id="sell">
+										<option value="小C">小C</option>
+									</select>
+								</p>
+								<a href="###" class="change">换</a>
+							</div>
+							<div class="form3">
+								<p>
+
+									<label for="date">日期</label>
+									<input type="date" id="date" value="2016-04-01" />
+									<label for="time">总耗时</label>
+									<select name="time" class="time">
+										<option value="8 天">8 天</option>
+									</select>
+								</p>
+								<p class="last_p">
+									<label for="man">人数</label>
+									<select name="man" class="man">
+										<option value="10 人">10 人</option>
+									</select>
+									<label for="turnover">成交项</label>
+									<select name="turnover" class="turnover">
+										<option value="10 项">10 项</option>
+									</select>
+								</p>
+							</div>
+							<button type="submit" >搜索</button>
+						</form>
 					</div>
 					<!-- 历史查询 -->
 					<div class="history_sear">
@@ -150,19 +193,22 @@
 					<!-- 项目 -->
 					<div class="item clearfix">
 						<div class="item_l">
-							item_l
+							<div class="title">第一组项目</div>
+							<div class="item_l_info">
+								
+							</div>
 						</div>
 						<div class="item_r">
-							item_r
+							<div class="title">第一组项目</div>
 						</div>
 					</div>
 					<!-- 日历 及 排行榜-->
 					<div class="item_last clearfix">
 						<div class="date">
-							date
+							<div class="title">日历</div>
 						</div>
 						<div class="top">
-							top
+							<div class="title">汽车排行榜</div>
 						</div>
 					</div>
 				</div>

@@ -6,7 +6,10 @@ task9 ifebaidu
 *{
 	padding:0;
 	margin:0;
-
+}
+body{
+	font-size: 12px;
+	font-family: "黑体";
 }
 a{
 	text-decoration: none;
@@ -24,7 +27,6 @@ ul{
 	height: 0;
 	clear: both;
 	visibility: hidden;
-	
 }
 /*头部*/
 header{
@@ -54,8 +56,7 @@ header form input.searchtext{
 	border:0;
 	border-radius: 14px;
 	padding-left: 35px;
-	background:#fff url(images/search_icon.png) no-repeat 12px center;
-	
+	background:#fff url(images/search_icon.png) no-repeat 12px center;	
 }
  header form a{
  	display: block;
@@ -80,8 +81,7 @@ aside{
 	width: 261px;
 	height: auto;
 	background:#2B2E3D;
-	float: left;
-	
+	float: left;	
 }
 /*登录信息*/
 .login_info{
@@ -128,8 +128,6 @@ ul.menu a{
 	font-size: 12px;
 	vertical-align: top;
 }
-
-
 /*一级菜单*/
 ul.menu li{
 	height: 34px;
@@ -143,7 +141,6 @@ ul.menu li.active{
 ul.menu li a{	
 	padding-left: 46px;
 }
-
 ul.menu li a:before{
 	content: "";
 	display: inline-block;
@@ -153,7 +150,6 @@ ul.menu li a:before{
 	background: url(images/menu_icon.png) no-repeat;
 	vertical-align: top;
 }
-
 ul.menu li a.file:before{
 	background-position: 0 0;
 }
@@ -167,7 +163,6 @@ ul.menu li a.tick:before{
 	background-position: 0 -38px;
 }
 /*侧栏公共部分*/
-
 ul.menu li.active a,ul.menu ul.child li.on a,ul.menu ul.child ul.thirst li.now a{
 	color: #fff;	
 }
@@ -241,8 +236,7 @@ article .nav ul{
 }
 article .nav ul li{
 	display: inline-block;
-	line-height: 31px;
-	
+	line-height: 31px;	
 }
 article .nav ul li a{
 	color:#AAAAA9;
@@ -266,6 +260,97 @@ article .content{
 	background: #fff;
 	box-shadow: 1px 0px 2px #CACDD0;
 	padding: 14px 111px 14px 27px;
+}
+.search_con form{
+	font-family: "黑体";
+	color: #AAAAA9;
+}
+.search_con form select{
+	border: 1px solid #AAAAA9;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	padding-left: 6px;
+	margin-left: 6px;
+	height:26px;
+	line-height: 26px;
+}
+.search_con form button{
+	width: 51px;
+	height: 25px;
+	background: #388BC2;
+	color:#fff;
+	border:0;
+	border-radius: 4px;
+	cursor:pointer;
+	margin-top: 18px;
+}
+/*搜索第一项*/
+.form1{
+	width: 125px;
+	height: 56px;
+	margin-right: 34px;
+	float: left;
+}
+
+.form1 select{
+	width: 71px;
+	background: url(images/select1.png) no-repeat 56px center;
+}
+.form2{
+	width: 186px;
+	height: 56px;
+	float: left;
+	margin-right: 28px;
+}
+.form2 p{
+	width: 157px;
+	height: 56px;
+	float: left;
+}
+.form2 p select{
+	width: 121px;
+	background: url(images/select2.png) no-repeat 106px center;
+}
+.form2 p label[for="sell"]{
+	line-height: 37px;
+}
+.form2 a.change{
+	display: inline-block;
+	width: 28px;
+	height: 56px;
+	text-indent: -9999px;
+	background: url(images/change.png) no-repeat center;
+	float: right;
+}
+.form3{
+	width: 296px;
+	height: 56px;
+	float: left;
+	margin-right: 28px;
+}
+.form3 p input#date{
+	display: inline-block;
+	width: 111px;
+	height: 26px;
+	padding-left: 8px;
+	margin-left: 6px;
+	border:1px solid #AAAAA9;
+}
+.form3 p label[for="time"],.form3 p label[for="turnover"]{
+	margin-left: 14px;
+}
+.form3 p select.time,.form3 p select.man{
+	width: 71px;
+	background: url(images/select2.png) no-repeat 56px center;
+}
+.form3 p select.turnover{
+	width: 121px;
+	background: url(images/select2.png) no-repeat 106px center;
+}
+
+.last_p{
+	margin-top: 4px;
 }
 /*历史查询*/
 .history_sear{
@@ -393,7 +478,7 @@ button.right i{
 	width: 171px;
 	background: #fff;
 	float: left;
-	margin:0 14px;
+	margin:0 15.83px;
 	margin-top: 4px;
 	padding:10px 12px;
 	box-shadow: 0px 0px 2px #AAAAA9;
@@ -438,6 +523,7 @@ dl.red dt{
 	background: #D04A36;
 }
 dl.yellow{
+
 	border-left: 4px solid #E2CD47;
 	margin-right: 0;
 }
@@ -446,22 +532,40 @@ dl.yellow dt{
 }
 /*项目*/
 .item{	
-	
-	
 	margin-top: 15px;
 }
-.item_l{
-	width: 531px;
-	height: 357px;
+/*公共部分*/
+.item_l,.item_r,.date,.top{
 	background: #fff;
+	border-radius: 6px;
+	border:1px solid #CFD1D4;
+	padding:0px 0px 22px 0px;
+
+}
+.title{
+	height: 41px;
+	line-height: 41px;
+	background: #F4F6F7;
+	border-radius: 6px;
+	color: #AAAAA9;
+	text-indent: 19px;
+}
+/*公共部分结束*/
+.item_l{
+	width: 529px;
+	height: 333px;
 	float: left;
 }
+.item_l_info{
+	width: 491px;
+	height: 279px;
+	background: lightgreen;
+	margin:12px 19px 0 19px;
+}
 .item_r{
-
-	height: 357px;
-	width: 351px;
-	background: #fff;
-	float: right;
+	height: 333px;
+	width: 349px;
+	float: right;	
 }
 /*最后一项*/
 .item_last{
@@ -471,15 +575,13 @@ dl.yellow dt{
 }
 /*日期*/
 .date{
-	width: 351px;
-	height: 357px;
-	float: left;
-	background: #fff;
+	width: 349px;
+	height: 333px;
+	float: left;	
 }
 /*汽车排行榜*/
 .top{
-	width: 531px;
-	height: 357px;
+	width: 529px;
+	height: 333px;
 	float: right;
-	background: #fff;
 }
