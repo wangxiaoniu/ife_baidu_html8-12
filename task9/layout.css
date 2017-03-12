@@ -833,6 +833,11 @@ table.top_table thead th:nth-child(3),table.top_table tr td:nth-child(3){
 	/*text-indent: 32px;*/
 	margin-right: 20px;
 }
+table.top_table tbody tr:hover {
+	background: #F3F5F6;
+	cursor:pointer;
+}
+
 table.top_table thead th:nth-child(3){
 	padding-left: 32px;
 }
@@ -865,9 +870,11 @@ table.top_table span i.percent9{
 }
 table.top_table span i.percent8{
 	width: 80%;
+	background: #F19E4F;
 }
 table.top_table span i.percent7{
 	width: 70%;
+
 }
 table.top_table span i.percent6{
 	width: 60%;
