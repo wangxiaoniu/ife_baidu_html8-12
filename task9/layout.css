@@ -10,6 +10,7 @@ task9 ifebaidu
 body{
 	font-size: 12px;
 	font-family: "黑体";
+	color: #535353;
 }
 a{
 	text-decoration: none;
@@ -541,15 +542,18 @@ dl.yellow dt{
 .item_l,.item_r,.date,.top{
 	background: #fff;
 	border-radius: 6px;
-	border:1px solid #CFD1D4;
+	border:1px solid #D7D9DA;
 	padding:0px 0px 22px 0px;
 
 }
 .title{
-	height: 41px;
+	height: 40px;
 	line-height: 41px;
 	background: #F4F6F7;
 	border-radius: 6px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	border-bottom: 1px solid #E6E8EB;
 	color: #AAAAA9;
 	text-indent: 19px;
 }
@@ -581,7 +585,7 @@ dl.yellow dt{
 }
 .item_l ul li.titile_active{
 	background: #fff;
-	border:1px solid #AAAAA9;
+	border:1px solid #CACBCB;
 	border-bottom: 0px;
 }
 
@@ -589,7 +593,7 @@ dl.yellow dt{
 	width: 489px;
 	height: 253px;
 	margin:0 auto;
-	border:1px solid #AAAAA9;
+	border:1px solid #CACBCB;
 	border-radius: 4px;
 	border-top-left-radius: 0px;
 
@@ -614,13 +618,93 @@ dl.yellow dt{
 .item_r{
 	height: 333px;
 	width: 349px;
-	float: right;	
+	float: right;
+		
+}
+.item_r_form{
+	width: 316px;
+	height: 278px;
+	margin-left: 32px;
+	margin-top: 14px;
+	font-family: "Microsoft Yahei";
+}
+.form_title{
+	text-align: left;
+	width: 283px;
+	height: 43px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.form_title2{
+	border-bottom: 1px solid #E8E8E8;
+	height: 44px;
+}
+.form_title2 dl{
+	padding-left: 14px;
+	height: 44px;
+	width: 84px;
+	border-right: 1px solid #E8E8E8;
+	float: left;
+}
+.form_title2 dl dt{
+	color:#E1E0E0;
+}
+.form_title p,.form_title2 p{
+	float: left;
+	padding-left: 14px;
+}
+.form_title span,.form_title2 span{
+	display: block;
+	color:#E1E0E0;
+}
+.form_info{
+	height: 190px;
+	
+}
+.form_info dl{
+	padding-left: 14px;
+	height: 148px;
+	width: 269px;
+	border-bottom: 1px solid #E8E8E8;
+	float: left;
+}
+.form_info dl dt{
+	color:#E1E0E0;
+}
+.form_info dl dd textarea{
+	width: 269px;
+	height: 120px;
+	border:0;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+.form_info p{
+	width: 283px;
+	height: 36px;
+	padding-top: 8px;
+}
+.form_info p label{
+	color:#C2C2C1;
+	margin-left:8px; 
+}
+.form_info p input{
+	vertical-align: middle;
+}
+.form_info p  button{
+	width: 51px;
+	height: 25px;
+	background: #388BC2;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: -3px;
+	float: right
 }
 /*最后一项*/
 .item_last{
 	margin-top: 10px;
 	height: 357px;
-	
 }
 /*日期*/
 .date{
@@ -628,6 +712,88 @@ dl.yellow dt{
 	height: 333px;
 	float: left;	
 }
+.date_select{
+	height: 35px;
+	width: 310px;
+	margin:0 auto;
+	border-bottom: 1px solid #A9CFEC;
+}
+.date_select select{
+	border:0;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background: url(images/select3.png) no-repeat 50px center;
+	padding-left: 4px;
+}
+.date_select select,.date_select button{
+	border:1px solid #AAAAA9;
+	height: 24px;
+	margin-top: 6px;
+	cursor: pointer;
+}
+.date_select select#year,.date_select button{
+	width: 65px;
+
+}
+.date_select select#month{
+	width: 87px;
+	padding-left: 19px;	
+}
+.date_select select#day{
+	width: 75px;
+	background: url(images/select3.png) no-repeat 64px center;
+}
+.date_select button{
+	background: #fff;
+}
+/*日历*/
+.calendars{
+	height: 225px;
+	width: 310px;
+	margin:0 auto;
+	border-collapse:separate;
+	border-spacing: 2px;
+}
+
+.calendars tr td{
+	height: 45px;
+	width: 42px;
+	text-align: center;
+	cursor:pointer;
+}
+.calendars tr td.active{
+	height: 43px;
+	width: 40px;
+	border:1px solid #F6CD47;
+}
+.calendars tr td:hover{
+	height: 43px;
+	width: 40px;
+	border:1px solid #F6CD47;
+}
+.calendars tr td span{
+	display: block;
+}
+.calendars tr td.td_pass{
+	color:#AAAAA9;
+}
+.calendars .holiday{
+	color: #f00;
+}
+
+table.tb_head {
+	width: 308px;
+	margin:0 auto;
+	border-collapse: collapse;
+	height: 29px;
+}
+table.tb_head th{
+	font-weight: normal;
+	border-bottom:1px solid #ccc;
+}
+/*日历 介绍*/
+
 /*汽车排行榜*/
 .top{
 	width: 529px;
@@ -646,7 +812,7 @@ table.top_table{
 }
 
 table.top_table,table.top_table td,table.top_table th{
-	border:1px solid #AAAAA9;
+	border:1px solid #CACBCB;
 }
 table.top_table th{
 	font-size:13px;
@@ -655,6 +821,7 @@ table.top_table th{
 	line-height: 30px;
 	font-weight: normal;
 }
+
 table.top_table thead th:first-child,table.top_table tr td:first-child{
 	width:68px;
 }
@@ -663,17 +830,61 @@ table.top_table thead th:nth-child(2),table.top_table tr td:nth-child(2){
 }
 table.top_table thead th:nth-child(3),table.top_table tr td:nth-child(3){
 	text-align: left;
-	text-indent: 32px;
+	/*text-indent: 32px;*/
+	margin-right: 20px;
+}
+table.top_table thead th:nth-child(3){
+	padding-left: 32px;
+}
+table.top_table span.table_text{
+	width: 66px;
+	padding-left: 32px;
+	background: none;
 }
 table.top_table span{
 	display: inline-block;
 	width: 168px;
 	height: 4px;
 	background: #DDDDDD;
-	margin-left: 20px;
 }
+
 table.top_table span i{
-	display: inline-block;
-	width: 60%;
+	display: block;
+	height: 4px;
+	background: #8ECDEE;
+	
+}
+table.top_table span i.percent10,table.top_table span i.percent9,table.top_table span i.percent8{
 	background: #ED6E52;
+}
+table.top_table span i.percent10{
+	width: 90%;
+}
+table.top_table span i.percent9{
+	width: 86%;
+}
+table.top_table span i.percent8{
+	width: 80%;
+}
+table.top_table span i.percent7{
+	width: 70%;
+}
+table.top_table span i.percent6{
+	width: 60%;
+}
+table.top_table span i.percent5{
+	width: 50%;
+}
+table.top_table span i.percent4{
+	width: 40%;
+}
+table.top_table span i.percent3{
+	width: 30%;
+}
+table.top_table span i.percent2{
+	width: 20%;
+}
+table.top_table span i.percent1{
+	width: 10%;
+
 }
