@@ -331,14 +331,17 @@ article .content{
 }
 .form3 p input#date{
 	display: inline-block;
-	width: 111px;
+	width: 118px;
 	height: 26px;
 	padding-left: 8px;
 	margin-left: 6px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
 	border:1px solid #AAAAA9;
 }
 .form3 p label[for="time"],.form3 p label[for="turnover"]{
-	margin-left: 14px;
+	margin-left: 7px;
 }
 .form3 p select.time,.form3 p select.man{
 	width: 71px;
@@ -556,11 +559,57 @@ dl.yellow dt{
 	height: 333px;
 	float: left;
 }
-.item_l_info{
+
+.item_l ul{
 	width: 491px;
-	height: 279px;
-	background: lightgreen;
-	margin:12px 19px 0 19px;
+	height: 26px;
+	margin:0 auto;
+	margin-top: 12px;
+}
+.item_l ul li{
+	width: 85px;
+	height: 26px;
+	float: left;
+	margin-right: 4px;
+	background: #EDEDF0;
+	border-radius: 4px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	text-align: center;
+	line-height: 26px;
+	cursor: pointer;
+}
+.item_l ul li.titile_active{
+	background: #fff;
+	border:1px solid #AAAAA9;
+	border-bottom: 0px;
+}
+
+.item_table{
+	width: 489px;
+	height: 253px;
+	margin:0 auto;
+	border:1px solid #AAAAA9;
+	border-radius: 4px;
+	border-top-left-radius: 0px;
+
+}
+.item_table table{
+	width: 403px;
+	height: 186px;
+	margin:0 auto;
+	margin-top: 29px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: "宋体";
+	color:#535353;
+}
+.item_table table,.item_table table td{
+	border:1px solid #DDDEDE;
+}
+.item_table table td.table_active{
+	background: #F4F5F6;
 }
 .item_r{
 	height: 333px;
@@ -584,4 +633,47 @@ dl.yellow dt{
 	width: 529px;
 	height: 333px;
 	float: right;
+}
+table.top_table{
+	width: 451px;
+	height: 276px;
+	margin:0 auto;
+	margin-top: 18px;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+	color:#323232;
+}
+
+table.top_table,table.top_table td,table.top_table th{
+	border:1px solid #AAAAA9;
+}
+table.top_table th{
+	font-size:13px;
+	color: #221814;
+	height: 30px;
+	line-height: 30px;
+	font-weight: normal;
+}
+table.top_table thead th:first-child,table.top_table tr td:first-child{
+	width:68px;
+}
+table.top_table thead th:nth-child(2),table.top_table tr td:nth-child(2){
+	width:90px;
+}
+table.top_table thead th:nth-child(3),table.top_table tr td:nth-child(3){
+	text-align: left;
+	text-indent: 32px;
+}
+table.top_table span{
+	display: inline-block;
+	width: 168px;
+	height: 4px;
+	background: #DDDDDD;
+	margin-left: 20px;
+}
+table.top_table span i{
+	display: inline-block;
+	width: 60%;
+	background: #ED6E52;
 }
