@@ -1,11 +1,8 @@
 *{
-	padding:20px;
+	padding: 0;
 	margin:0;
 }
-.box1,.box2,.box3,.box4{
-	padding:20px;
-	width: 128px;
-}
+
 .box1,.box2,.box3{
 	border:1px solid #f00;
 }
@@ -13,44 +10,47 @@
 	border:1px solid #0f0;
 }
 .box1{
-	height: 98px;
+	height: 120px;
 }
 .box2{
-	height: 78px;
+	height: 100px;
 }
 .box3{
-	height: 18px;
+	height: 38px;
 }
 .box4{
-	height: 178px;
+	height: 200px;
+}
+.box1,.box2,.box3,.box4{
+	padding:20px;
+	width: 150px;
+	margin:20px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
 .main{
-	display: flex;
+	width: 100%;
 	-webkit-display: flex;
 	-moz-display: flex;
-	justify-content: space-between;
+	display: flex;
 	-webkit-justify-content: space-between;
 	-moz-justify-content: space-between;
-	align-items: center;
+	justify-content: space-between;	
 	-webkit-align-items: center;
 	-moz-align-items: center;
+	align-items: center;
 }
 @media (max-width: 640px){
 	.main{
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;/*项目在主轴上按左到右排列，并且换行wrap*/
-		
-		-webkit-align-content:space-around;
-		 align-content: space-around;
 		-webkit-align-items: flex-start;/*侧轴上的对齐方式，这里是侧轴起点对齐方式排列*/
-		-moz-align-items: flex-start;
-		 
+		-moz-align-items: flex-start;		 
 	}
 	.box4{
 		order:-1;
 		-webkit-order:-1;
-		-moz-order:-1;
-		
+		-moz-order:-1;	
 	}
 	
 	
