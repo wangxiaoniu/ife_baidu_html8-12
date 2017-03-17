@@ -1,0 +1,57 @@
+*{
+	padding:20px;
+	margin:0;
+}
+.box1,.box2,.box3,.box4{
+	padding:20px;
+	width: 128px;
+}
+.box1,.box2,.box3{
+	border:1px solid #f00;
+}
+.box4{
+	border:1px solid #0f0;
+}
+.box1{
+	height: 98px;
+}
+.box2{
+	height: 78px;
+}
+.box3{
+	height: 18px;
+}
+.box4{
+	height: 178px;
+}
+.main{
+	display: flex;
+	-webkit-display: flex;
+	-moz-display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+}
+@media (max-width: 640px){
+	.main{
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;/*项目在主轴上按左到右排列，并且换行wrap*/
+		
+		-webkit-align-content:space-around;
+		 align-content: space-around;
+		-webkit-align-items: flex-start;/*侧轴上的对齐方式，这里是侧轴起点对齐方式排列*/
+		-moz-align-items: flex-start;
+		 
+	}
+	.box4{
+		order:-1;
+		-webkit-order:-1;
+		-moz-order:-1;
+		
+	}
+	
+	
+}
