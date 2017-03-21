@@ -13,7 +13,6 @@ html{
 body{
 	background: #F5F5F5;
 	font-size: 3.8vw;
-	height: 100vh;
 }
 img{
 	max-width: 100vw;
@@ -72,14 +71,14 @@ nav ul{
 nav ul li{
 	-webkit-flex:1;
 	flex:1;
-	height: 10.6vw;
+	height: 10.6vh;
 	float: left;
 }
 nav ul li a{
 	display: block;
-	height: 9.8vh;
-	line-height: 10.6vh;
-	border-bottom: 0.8vh solid #fff;
+	height: 10.6vw;
+	line-height: 10.6vw;
+	border-bottom: 0.8vw solid #fff;
 	text-align: center;
 	color: #646464;
 	text-decoration: none;
@@ -91,17 +90,16 @@ nav ul li a.active{
 	border-bottom: 0.8vw solid #91D4DA;
 }
 section.banner{
-	width: 100%;
+	overflow: hidden;
 	padding:0;
 	background: #fff;
 }
-section.banner img{
-	border:0;
-}
+
+
 article.classify{
 	background: #fff;
 	height: 29.0vw;
-	border-bottom:0.4rem solid #DEDEDE;
+	border-bottom:0.4vw solid #DEDEDE;
 	padding:4.5vw 2.8vw;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -122,6 +120,7 @@ article.classify dl{
 	text-align: center;
 
 }
+
 article.classify dl dt{
 	height: 11.3vw;
 	background:#00C7D6;
@@ -132,7 +131,6 @@ article.classify dl dt{
 article.classify dl dt img{
 	display: inline-block;
 	width: 6.4vw;
-	height: 7.8vh;
 	margin-top: 1.75vw;
 }
 article.classify dl dd{
@@ -141,15 +139,68 @@ article.classify dl dd{
 }
 section.dl{
 	height: 42.0vw;
-	background: #999;
+	background: #fff;
+	margin:0 auto;
 	margin-bottom: 3.3vw;
-	padding:4.2rem 2.8vw;
+	padding:4.2vw 2.8vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-moz-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+}
+section.dl dl{
+	height: 33.6vw;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	flex: 1;
+	border-right: 0.3vw solid #DEDEDE;
+	text-align: center;
+}
+
+section.dl dl.one{
+	background:url(images/dl_bag.png) no-repeat 50% 17%;
+	background-size:12.9vw;
+}
+section.dl dl.two{
+	background:url(images/dl_bag2.png) no-repeat 50% 17%;
+	background-size:12.9vw;
+}
+section.dl dl.last{
+	background:url(images/dl_bag3.png) no-repeat 50% 17%;
+	background-size:20.6vw;
+	border-right:0;
+}
+section.dl dl dt{
+	margin-top: 21.9vw;
+}
+section.dl dl dd{
+	padding-top: 1.6vw;
+	font-size: 3.0vw;
+	color:#585858;
 }
 article.module{
-	height: 66.6vw;
-	padding:0 2.8vw;
+	height: 66.0vw;
+	padding:3.7vw 2.8vw 0vw 2.8vw;
 	background: lightblue;
 	margin-bottom: 3.3vw;
+}
+article.module h2{
+	font-size: 3.8vw;
+	height: 8.0vw;
+	border-bottom: 0.4vw solid #E0E0E0;
+	font-weight: normal;
+	margin-bottom: 3.5vw;
+}
+article.module .module_item{
+	background: lightgreen;
+	height: 22.8vw;
+	margin-bottom: 2.6vw;
 }
 .article_list{
 	height: 88.8vw;

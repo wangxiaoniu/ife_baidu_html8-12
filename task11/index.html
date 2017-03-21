@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0">
 	<meta content="telephone=no" name="format-detection">
 	<title>task11</title>
 	<link rel="stylesheet" href="layout.css">
@@ -12,6 +12,7 @@
 		<a href="###">返回</a>
 		<h1>这是标题</h1>
 	</header>
+	<!-- 导航 -->
 	<nav>
 		<ul>
 			<li><a href="###" class="active">导航</a></li>
@@ -21,9 +22,11 @@
 			<li><a href="###">导航</a></li>
 		</ul>
 	</nav>
+	<!-- banner -->
 	<section class="banner">
 		<img src="images/banner.png" alt="banner">
 	</section>
+	<!-- 标签 -->
 	<article class="classify">
 
 		<dl>
@@ -48,8 +51,28 @@
 		</dl>
 		
 	</article>
-	<section class="dl">dl</section>
-	<article class="module">module</article>
+	<!-- 分栏 -->
+	<section class="dl">
+		<dl class="one">
+			<dt>分栏一</dt>
+			<dd>分栏小标题</dd>
+		</dl>
+		<dl class="two">
+			<dt>分栏二</dt>
+			<dd>分栏小标题</dd>
+		</dl>
+
+		<dl class="last">
+			<dt>分栏三</dt>
+			<dd>分栏小标题</dd>
+		</dl>
+	</section>
+	<!-- 模块一 -->
+	<article class="module">
+		<h2>模块一</h2>
+		<div class="module_item"></div>
+		<div class="module_item"></div>
+	</article>
 	<article class="module">module2</article>
 	<div class="article_list">article_list</div>
 	<footer>footer</footer>
