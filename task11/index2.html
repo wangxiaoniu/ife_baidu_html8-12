@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.main{
+			width: 300px;
+			margin:0 auto;
+			display: felx;
+			display: -webkit-flex;
+			justify-content: space-between;
+			-webkit-justify-content: space-between;
+			-moz-justify-content: space-between;
+			flex-flow: row wrap;
+			background: red;
+		}
+		.main div{
+
+			width: 100px;
+			height: 100px;
+			background: green;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+
+		}
+		.main div.two{
+			width: 100px;
+			height: 100px;
+			background: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div>1</div>
+		<div class="two">2</div>
+	</div>
+</body>
+</html>
