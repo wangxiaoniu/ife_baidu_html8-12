@@ -86,6 +86,7 @@ nav ul li a{
 	text-align: center;
 	color: #646464;
 	text-decoration: none;
+	font-size: 3.0vw;
 
 }
 nav ul li a:hover{
@@ -141,6 +142,7 @@ article.classify dl dt img{
 article.classify dl dd{
 	height: 6.9vw;
 	padding-top: 4.0vw;
+	font-size: 3.0vw;
 }
 /*分栏*/
 section.dl{
@@ -184,6 +186,7 @@ section.dl dl.last{
 }
 section.dl dl dt{
 	margin-top: 21.9vw;
+	font-size: 3.8vw;
 }
 section.dl dl dd{
 	padding-top: 1.6vw;
