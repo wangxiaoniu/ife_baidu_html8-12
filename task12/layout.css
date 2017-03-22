@@ -1,0 +1,58 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-size: 3.8vw;
+	font-family: "Microsoft Yahei";
+	margin:0 auto;
+}
+table.top{
+	width: 60vw;
+	height: 21.9vw;
+	margin:10.0vw auto;
+	border:2px solid #000;
+	border-collapse: collapse;
+}
+table.top tr td,table.top tr th{
+	border:2px solid #fff;
+	font-family: "黑体";
+}
+table.top tr th{
+	background:#000;
+	color:#fff;
+	text-align: left;
+
+}
+table.top tr:nth-of-type(2n){
+	background: #ccc;
+}
+table.top tbody tr:nth-of-type(1),table.top tbody tr:nth-of-type(2),table.top tbody tr:nth-of-type(3){
+	color:#f00;
+}
+/*第二部分输入框改变*/
+form a{
+	display: block;
+	width: 40vw;
+	margin:0 auto;
+}
+input.text{
+	display: none;
+
+}
+input.text +label{
+	display: block;
+	width: 40vw;
+	height: 10vw;
+	border:1px solid #ccc;
+	margin: 0 auto;
+	cursor: pointer;
+}
+input.text:checked +label{
+	width: 80.0vw;
+	height: 10vw;
+	border:1px solid lightblue;
+	box-shadow: 0 0 5px rgba(81, 203, 238);
+-webkit-box-shadow: 0 0 5px rgba(81, 203, 238);
+-moz-box-shadow: 0 0 5px rgba(81, 203, 238);
+}
