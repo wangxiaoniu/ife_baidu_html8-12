@@ -1,14 +1,21 @@
 *{
 	padding:0;
 	margin:0;
+	border-sizing:border-box;
+	-webkit-border-sizing:border-box;
+	-moz-border-sizing:border-box;
 }
 body{
-	font-size: 3.8vw;
+	
 	font-family: "Microsoft Yahei";
 	margin:0 auto;
 }
+ul{
+	list-style-type: none;
+}
 table.top{
-	width: 60vw;
+	font-size: 4.8vw;
+	width: 80vw;
 	height: 21.9vw;
 	margin:10.0vw auto;
 	border:2px solid #000;
@@ -49,10 +56,152 @@ input.text +label{
 	cursor: pointer;
 }
 input.text:checked +label{
-	width: 80.0vw;
+	width: 60.0vw;
 	height: 10vw;
-	border:1px solid lightblue;
-	box-shadow: 0 0 5px rgba(81, 203, 238);
--webkit-box-shadow: 0 0 5px rgba(81, 203, 238);
--moz-box-shadow: 0 0 5px rgba(81, 203, 238);
+	border:2px solid rgba(81, 203, 238);
+	box-shadow: 0vw 0vw 0.5vw rgba(81, 203, 238);
+	-webkit-box-shadow: 0vw 0vw 0.5vw rgba(81, 203, 238);
+	-moz-box-shadow: 0vw 0vw 0.5vw rgba(81, 203, 238);
 }
+/*第三部分焦点图*/
+.content{
+	width: 90vw;
+	height: 60vw;
+	border:0.4vw solid #ccc;
+	margin:10vw auto;
+	overflow: hidden;
+	position: relative;
+}
+.focus_box{
+	width: 90vw;
+	height: 60vw;
+	animation:focus_bag 6s infinite;
+	-webkit-animation:focus_bag 6s infinite;
+}
+
+
+.focus_box ul.img{
+	width: 360vw;
+	height: 60vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation:focus_bag 6s infinite;
+	-webkit-animation:focus_bag 6s infinite;
+}
+.focus_box ul.img li{
+	float: left;
+
+}
+.focus_box ul.img li a{
+	display: block;
+	width: 90vw;
+	height: 60vw;
+}
+.focus_box ul.img li a.one{
+	background: red;
+}
+.focus_box ul.img li a.two{
+	background: blue;
+}
+.focus_box ul.img li a.three{
+	background: lightgreen;
+}
+.focus_box ul.button_tab{
+	width: 31vw;
+	height: 10vw;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-felx;
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+	-moz-justify-content:space-between;
+	
+}
+.focus_box ul.button_tab li{
+	width: 10vw;
+	height: 10vw;
+	background:rgba(255,255,255,0.5);
+
+}
+.focus_box ul.button_tab li#tab{
+	width: 10vw;
+	height: 10vw;
+	background:rgba(212,212,212,0.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	animation:focus_li 6s infinite;
+	-webkit-animation:focus_li 6s infinite;
+}
+.focus_box ul.button_tab li a{
+	display: block;
+	width: 10vw;
+	height: 10vw;
+	color:#fff;
+	font-size: 3.8vw;
+	line-height: 10vw;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*写动画*/
+@keyframes focus_li{
+	0%{
+		left: 0vw;top: 0vw;	
+	}
+	14%{
+		left: 0vw;top: 0vw;	
+	}
+	28%{
+		left: 10.5vw;top: 0vw;
+	}
+	42%{
+		left: 10.5vw;top: 0vw;	
+	}
+	56%{
+		left: 21vw;top: 0vw;
+	}
+	70%{
+		left: 21vw;top: 0vw;
+	}
+	84%{
+		left: 0vw;top: 0vw;	
+	}
+	100%{
+		left: 0vw;top: 0vw;	
+	}
+
+}
+  @keyframes focus_bag{
+	0%{
+		left: 0vw;
+	}
+	14%{
+		left: 0vw;
+	}
+	28%{
+		left: -90vw;
+	}
+	42%{
+		left: -90vw;	
+	}
+	56%{
+		left: -180vw;
+	}
+	70%{
+		left: -180vw;
+	}
+	84%{
+		left: 0vw;
+	}
+	100%{
+		left: 0vw;
+	}
+
+}
+ 
